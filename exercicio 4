@@ -1,0 +1,22 @@
+package exercicio;
+import java.util.Scanner;
+public class exercicios {
+	public static void main(String[]args) {
+Scanner sc = new Scanner(System.in);
+
+float soma = 0;
+float media = 0;
+float[] nota = new float[3];
+for(int i = 0; i < 3; i++) {
+	System.out.print("Digite a "+(i+1)+" nota:");
+	nota[i] = sc.nextFloat();
+	
+	soma += nota[i];
+}
+
+media = soma / 3;
+System.out.printf("A média das notas é:%.2f%n",media);
+
+sc.close();
+	}
+}

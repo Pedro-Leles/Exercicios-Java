@@ -1,0 +1,17 @@
+package exercicio;
+import java.util.Scanner;
+public class exercicios {
+	public static void main(String[]args) {
+Scanner sc = new Scanner(System.in);
+
+System.out.print("Digite o valor em R$:");
+float real = sc.nextFloat();
+
+float dolar = (float) (real / 5.75);
+
+System.out.printf("O valor em Dolar é US$:%.2f", dolar);
+
+
+sc.close();
+	}
+}

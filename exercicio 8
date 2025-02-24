@@ -1,0 +1,16 @@
+package exercicio;
+import java.util.Scanner;
+public class exercicios {
+	public static void main(String[]args) {
+Scanner sc = new Scanner(System.in);
+
+System.out.print("Digite o valor do raio:");
+float raio = sc.nextFloat();
+
+Double V = 1.8 * 3.14159 * (raio * raio * raio);
+
+System.out.printf("O volume da esfera é:%.2f", V);
+
+sc.close();
+	}
+}
